@@ -10,8 +10,8 @@ import argparse
 import os
 import torch
 from subprocess import check_call, check_output
-from glob import glob
-from tempfile import TemporaryDirectory, NamedTemporaryFile as TempFile
+#from glob import glob
+#from tempfile import TemporaryDirectory, NamedTemporaryFile as TempFile
 import math
 import json
 from utils import check_last_line

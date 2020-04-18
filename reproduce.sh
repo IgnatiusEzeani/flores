@@ -17,7 +17,8 @@ fi
 LANG_PAIR=$1
 
 if [[ $LANG_PAIR = "ne_en" ]]; then
-  python scripts/train.py --config configs/neen.json --databin $PWD/data-bin/wiki_ne_en_bpe5000/
+  # python scripts/train.py --config configs/neen.json --databin $PWD/data-bin/wiki_ne_en_bpe5000/
+  python scripts/train.py --config configs/neen.json --databin $PWD/data/test/
 elif [[ $LANG_PAIR = "en_ne" ]]; then
   python scripts/train.py --config configs/enne.json --databin $PWD/data-bin/wiki_ne_en_bpe5000/
 elif [[ $LANG_PAIR = "si_en" ]]; then
